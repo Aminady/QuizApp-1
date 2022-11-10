@@ -1,0 +1,145 @@
+body {
+    font-family: 'Roboto';
+    background-color: #4158D0;
+    background-image: linear-gradient(0deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+    background-repeat: no-repeat;
+    color: white;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header {
+    margin-bottom: 80px;
+}
+
+.nav-bar {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    align-items: baseline;
+}
+
+.about, .ressources, .contact {
+    cursor: pointer;
+}
+
+.info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    font-size: 20px;
+}
+
+.website-presentation {
+    display: flex;
+    flex-direction: row;
+    font-size: 18px;
+}
+
+
+.present-text {
+    position: relative;
+    line-height: 25px;
+    word-spacing: 2px;
+}
+
+.start-button {
+    width: 150px;
+    height: 40px;
+    border: none;
+    border-radius: 10px;
+    font-size: 18px;
+    background: linear-gradient(90deg, #f2f777 0%, #c67700 100%);
+    position: absolute;
+    bottom: 80px;
+    right: 70px;
+}
+
+.form-container {
+    /* color: mediumseagreen; */
+    background: rgb(63,94,251);
+    background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%);     display: block;
+    margin: auto;
+    /* color: rgb(87, 84, 84); */
+    color: #c67700;
+    /* color: white; */
+    font-size: 24px;
+    /* background: white; */
+    padding: 10px;
+    width: 450px;
+    height: 300px;
+    border-radius: 10px;
+    box-shadow: 0 2px 15px 10px #a1a8a8;
+    position: relative;
+}
+
+.question {
+    text-align: center;
+    font-weight: bold;
+}
+
+.answers {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.answer-container {
+    margin-bottom: 10px;
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    align-items: end;
+    justify-items: start;
+}
+
+input[type="checkbox"] {
+    -webkit-appearance: none;
+    appearance: none;
+    background-color: #fff;
+    margin: 0;
+    font: inherit;
+    color: currentColor;
+    width: 0.85em;
+    height: 0.85em;
+    border: 0.15em solid currentColor;
+    border-radius: 0.15em;
+    transform: translateY(-0.075em);
+    display: grid;
+    place-content: center;
+}
+
+input[type="checkbox"]:hover {
+    cursor: pointer;
+}
+input[type="checkbox"]::before {
+    content: "";
+    width: 0.65em;
+    height: 0.65em;
+    transform: scale(0);
+    transition: 120ms transform ease-in-out;
+    box-shadow: inset 1em 1em var(--form-control-color);
+    background-color: CanvasText;
+    transform-origin: bottom left;
+    clip-path: polygon(14% 44%, 0 65%, 50% 100%, 100% 16%, 80% 0%, 43% 62%);
+}
+
+input[type="checkbox"]:checked::before {
+    transform: scale(1);
+}
+
+input[type="checkbox"]:focus {
+    outline: max(2px, 0.15em) solid currentColor;
+    outline-offset: max(2px, 0.15em);
+}
+
+button {
+    cursor: pointer;
+    position: absolute;
+    width: 150px;
+    height: 30px;
+    border: none;
+    background: #b958b5;
+    color: white;
+    border-radius: 5px;
+    bottom: 40px;
+    right: 160px;
+}
